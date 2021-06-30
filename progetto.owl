@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ress/ontologies/2021/4/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/ress/ontologies/2021/4/untitled-ontology-8"
+     xmlns:ns1="http://www.semanticweb.org/ress/ontologies/2021/4/progetto#"
+     xmlns:ns2="http://www.semanticweb.org/ress/ontologies/2021/4/progetto/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sws="http://sws.geonames.org/3020251/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nations="http://www.semanticweb.org/ress/ontologies/2021/4/nations#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#confineWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#confineWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#flowsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#flowsIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasRiver"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/OWLClass_23c2732c_0b95_4700_8582_098ba2da47a8"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#fromContinent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#fromContinent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasCapital">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Capital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasCurrency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasCurrency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nationso#Currency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasLake -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasLake">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#locatedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="https://www.wikidata.org/wiki/OWLClass_b6948b96_5234_4576_aa7a_3515f73eb3ae"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasRiver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#hasRiver">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="https://www.wikidata.org/wiki/OWLClass_23c2732c_0b95_4700_8582_098ba2da47a8"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#locatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://www.wikidata.org/wiki/OWLClass_b6948b96_5234_4576_aa7a_3515f73eb3ae"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#marineBorderWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#marineBorderWith">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#surroundsNation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Sea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#officialLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#officialLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#politicalSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#politicalSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Political_system"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#surroundsNation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#surroundsNation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Sea"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sws.geonames.org/3020251/African_Nation -->
+
+    <owl:Class rdf:about="http://sws.geonames.org/3020251/African_Nation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sws.geonames.org/3020251/American_Nation -->
+
+    <owl:Class rdf:about="http://sws.geonames.org/3020251/American_Nation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sws.geonames.org/3020251/Asian_Nation -->
+
+    <owl:Class rdf:about="http://sws.geonames.org/3020251/Asian_Nation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sws.geonames.org/3020251/Oceanic_Nation -->
+
+    <owl:Class rdf:about="http://sws.geonames.org/3020251/Oceanic_Nation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Capital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Capital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#European_Nation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#European_Nation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Island -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Island">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Mainland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Mainland">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#confineWith"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Monarchy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Monarchy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Political_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Morphology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Morphology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Nation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Political_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Political_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Political_system"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Republic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Republic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Political_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nations#Sea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Sea">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/OWLClass_92ad2cbe_eb9c_47c6_b1e6_819e9ee335d3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ress/ontologies/2021/4/nationso#Currency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/nationso#Currency"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org# -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/OWLClass_23c2732c_0b95_4700_8582_098ba2da47a8 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/OWLClass_23c2732c_0b95_4700_8582_098ba2da47a8">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/OWLClass_92ad2cbe_eb9c_47c6_b1e6_819e9ee335d3"/>
+        <rdfs:label xml:lang="en">River</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/OWLClass_92ad2cbe_eb9c_47c6_b1e6_819e9ee335d3 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/OWLClass_92ad2cbe_eb9c_47c6_b1e6_819e9ee335d3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Morphology"/>
+        <rdfs:label xml:lang="en">bodyOfWater</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/OWLClass_b6948b96_5234_4576_aa7a_3515f73eb3ae -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/OWLClass_b6948b96_5234_4576_aa7a_3515f73eb3ae">
+        <rdfs:subClassOf rdf:resource="https://www.wikidata.org/wiki/OWLClass_92ad2cbe_eb9c_47c6_b1e6_819e9ee335d3"/>
+        <rdfs:label xml:lang="en">Lake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/page/Africa -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Americas -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Americas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Antarctica -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Antarctica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Asia -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Asia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Europe -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Oceania -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Oceania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/nations#Continent"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
