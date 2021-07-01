@@ -419,6 +419,35 @@
     <owl:NamedIndividual rdf:about="https://en.wikipedia.org/wiki/Oceania">
         <rdf:type rdf:resource="http://www.semanticweb.org/ress/ontologies/2021/4/country#Continent"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#African_Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#American_Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#Asian_Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#European_Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#Oceanic_Country"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#Monarchy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#Other"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ress/ontologies/2021/4/country#Republic"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
